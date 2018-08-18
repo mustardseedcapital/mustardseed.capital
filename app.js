@@ -22,6 +22,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', mainRouter);
 // app.use('/users', usersRouter);
 
+// make NPM packages accessible to HTML
+app.use('/node_modules/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
