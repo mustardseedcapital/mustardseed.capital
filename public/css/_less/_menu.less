@@ -1,12 +1,87 @@
 #menu {
-  background: #fff;
+  background: @brown;
   position: fixed;
-  text-align: right;
+  right: -5000px;
   top: 0px;
+  -moz-transition: right 0.32s ease;
+    -webkit-transition: right 0.32s ease;
+    -o-transition: right 0.32s ease;
+    -ms-transition: right 0.32s ease;
+    transition: right 0.32s ease;
   width: 100%;
   z-index: 100;
 }
-
+#menu.toggle {
+  right: 0px !important;
+}
+button#hamburger-menu-close {
+  .hover-animation-background;
+  background: none;
+  border: none;
+  float: right;
+  margin: 0px;
+}
+button#hamburger-menu-close > span {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+}
+button#hamburger-menu-close:hover {
+  background: @green-light;
+}
+button#hamburger-menu-close:hover > span {
+  color: @brown;
+}
+#menu .nav-primary {
+  .container;
+  list-style: none;
+  margin-top: 12rem;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+#menu .nav-primary li {
+  padding: 0.8rem 0rem;
+}
+#menu .nav-primary a {
+  .serif;
+  color: #fff;
+  font-size: 1.48rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+#menu .nav-primary a:hover {
+  color: @green-light;
+}
+#menu .nav-primary a span {
+  color: @mustard;
+  font-size: 1.48rem;
+  text-align: center;
+  width: 3rem;
+}
+#menu .nav-primary a:hover span {
+  color: @green-light;
+}
+#menu .social {
+  border-top: solid 1px @mustard-dark;
+  display: none;
+  list-style: none;
+  margin: 10rem auto 0rem auto;
+  padding: 0px;
+  text-align: center;
+  width: 14rem;
+}
+#menu .social li {
+  display: inline-block;
+}
+#menu .social a span {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.4rem 0rem;
+  width: 3rem;
+}
+#menu .social a:hover span {
+  color: @green-light;
+}
 
 
 

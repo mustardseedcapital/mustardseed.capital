@@ -1,6 +1,6 @@
 function UpdateLayout() {
-  $('#nav-primary').css({
-    'left' : function() { return -$(this).width() + "px"; }
+  $('#menu').css({
+    'right' : function() { return -$(this).width() + "px"; }
   })
   $('#board > div').css({
     // grid-auto-rows: minmax(200px, auto);
@@ -39,8 +39,7 @@ function UpdateLayout() {
 
 $(document).ready(function() {
   $('.toggle-hamburger-menu').click(function() {
-    $('#hamburger-menu > span').toggleClass('toggle');
-    $('#nav-primary').toggleClass('toggle');
+    $('#menu').toggleClass('toggle');    
     $('#overlay').toggleClass('toggle');
     $('body').toggleClass('disable-scroll');
     // $('#nav-slider').toggleClass('nav-slider-out');
@@ -294,15 +293,15 @@ $(window).resize(function() {
 
 
 $(window).scroll(function() {
-  if( $(window).scrollTop() > 400 ) {
-    $('body').css({
-      'background' : '#fff'
-    });
-  } else {
-    $('body').css({
-      'background' : '#00263a'
-    });
-  }
+  // if( $(window).scrollTop() > 400 ) {
+  //   $('body').css({
+  //     'background' : '#fff'
+  //   });
+  // } else {
+  //   $('body').css({
+  //     'background' : '#00263a'
+  //   });
+  // }
 
   if ($(window).width() < 375) {
   // alert("Window width < 375");
