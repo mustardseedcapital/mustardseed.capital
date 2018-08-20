@@ -29,15 +29,16 @@
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lora:400|Ubuntu:300,400,500');
 @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 .sans-serif {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  letter-spacing: 0.04rem;
 }
 .serif {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+  font-family: 'Lora', serif;
+  font-weight: 400;
 }
 
 
@@ -48,21 +49,26 @@ html {
   height: 100%;
 }
 body {
-  .serif;
+  .sans-serif;
   background: #fff;
   color: @brown;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
-#content {
-  background: #f5f5f5;
-  min-height: 35rem;
-  width: 100%;
-  z-index: 2;
+body.disable-scroll {
+  overflow: hidden !important;
+}
+p {
+  font-size: 1.12rem;
+  line-height: 1.84rem;
+  margin: 0rem 0rem 2.36rem 0rem;
+}
+p strong {
+  font-weight: 400;
 }
 .container {
-  margin: 0rem 2rem;
+  margin: 0rem 2.2rem;
 }
 .hover-animation-background {
   -moz-transition: background 0.24s ease;
@@ -208,3 +214,4 @@ body {
 @import '_menu.less';
 @import '_header.less';
 @import '_footer.less';
+@import '_content.less';

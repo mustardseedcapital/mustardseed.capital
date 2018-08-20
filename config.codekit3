@@ -67,6 +67,23 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/public\/css\/_less\/_content.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/public\/css\/_less\/_content.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/public\/css\/_less\/_footer.less": {
 		"aP": 0,
 		"bl": 0,
