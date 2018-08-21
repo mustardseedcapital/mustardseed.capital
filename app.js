@@ -4,6 +4,16 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+// variables
+if(process.env.NODE_ENV === 'production') {
+  urlBase = 'http://mustardseed.capital';
+  googleTagId = 'UA-92279118-1';
+} else {
+  require('./.env');
+  urlBase = 'http://localhost:3000';
+  googleTagId = 'ABC-012345';
+}
+
 const mainRouter = require('./app_server/routes/main-router.js');
 // const usersRouter = require('./app_server/routes/users');
 
