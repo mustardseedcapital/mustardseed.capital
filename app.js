@@ -7,7 +7,7 @@ const logger = require('morgan');
 // variables
 if(process.env.NODE_ENV === 'production') {
   urlBase = 'http://mustardseed.capital';
-  googleTagId = 'UA-92279118-1';
+  googleTagId = 'GTM-N8TFCG5';
 } else {
   require('./.env');
   urlBase = 'http://localhost:3000';

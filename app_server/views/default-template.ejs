@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="/img/icon.png">
-    <link rel="shortcut icon" href="/img/icon.png">
+    <link rel="apple-touch-icon" href="<%- urlBase %>/img/icon.png">
+    <link rel="shortcut icon" href="<%- urlBase %>/img/icon.png">
     <title>Helping seed and "pre-seed" stage startups move mountains | Mustard Seed Capital</title>
     <meta name="robots" content="">
     <meta name="description" content='Helping seed and "pre-seed" stage startups by providing seed capital, strategic support, and tactical support.'>
@@ -25,13 +25,13 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content='Helping seed and "pre-seed" stage startups by providing seed capital, strategic support, and tactical support.'>
     <meta name="twitter:image" content="">
-    <link rel="stylesheet" href="/css/styles.min.css">
+    <link rel="stylesheet" href="<%- urlBase %>/css/styles.min.css">
     <!-- Google Tag Manager -->
-    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','');</script> -->
+    })(window,document,'script','dataLayer','<%- googleTagId %>');</script>
     <!-- End Google Tag Manager -->
   </head>
 
@@ -40,8 +40,8 @@
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%- googleTagId %>"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
 
@@ -53,10 +53,10 @@
       </header>
 
       <ul class="nav-primary">
-        <li><a href="/philosophy/"><span class="fas fa-graduation-cap"></span> Philosophy</a></li>
-        <li><a href="/seed-capital/"><span class="fas fa-money-bill-wave"></span> Seed Capital</a></li>
-        <li><a href="/strategic-support/"><span class="fas fa-chess"></span> Strategic Support</a></li>
-        <li><a href="/tactical-support/"><span class="fas fa-project-diagram"></span> Tactical Support</a></li>
+        <li><a href="<%- urlBase %>/philosophy/"><span class="fas fa-graduation-cap"></span> Philosophy</a></li>
+        <li><a href="<%- urlBase %>/seed-capital/"><span class="fas fa-money-bill-wave"></span> Seed Capital</a></li>
+        <li><a href="<%- urlBase %>/strategic-support/"><span class="fas fa-chess"></span> Strategic Support</a></li>
+        <li><a href="<%- urlBase %>/tactical-support/"><span class="fas fa-project-diagram"></span> Tactical Support</a></li>
       </ul>
 
       <ul class="social">
@@ -103,7 +103,7 @@
 
     <footer id="footer">
       <div class="container">
-        <img src="/img/logo-mustardseed-480x480.png" alt="Mustard Seed Capital" class="logo">
+        <img src="<%- urlBase %>/img/logo-mustardseed-480x480.png" alt="Mustard Seed Capital" class="logo">
 
         <p><strong>Mustard Seed Capital</strong> helps seed and "pre-seed" stage startups by providing seed capital, strategic support, and tactical&nbsp;support.</p>
 
@@ -115,7 +115,7 @@
 
 
 
-    <script src="/node_modules/jquery/jquery.min.js"></script>
-    <script src="/js/functions.min.js"></script>
+    <script src="<%- urlBase %>/node_modules/jquery/jquery.min.js"></script>
+    <script src="<%- urlBase %>/js/functions.min.js"></script>
   </body>
 </html>

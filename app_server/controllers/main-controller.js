@@ -1,6 +1,8 @@
 const home = function(req, res) {
   res.render('default-template.ejs', {
-    title: 'Express'
+    title: 'Express',
+    urlBase,
+    googleTagId
   });
 };
 
