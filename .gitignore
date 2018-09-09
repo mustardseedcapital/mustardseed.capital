@@ -1,3 +1,29 @@
+# Ember
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/ember-client/dist/
+/ember-client/tmp/
+
+# dependencies
+/ember-client/bower_components/
+/ember-client/node_modules/
+
+# misc
+/ember-client/.sass-cache
+/ember-client/connect.lock
+/ember-client/coverage/
+/ember-client/libpeerconnection.log
+/ember-client/testem.log
+
+# ember-try
+/ember-client/.node_modules.ember-try/
+/ember-client/bower.json.ember-try
+/ember-client/package.json.ember-try
+
+
+
+
 # Logs
 logs
 *.log
