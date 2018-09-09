@@ -7,7 +7,7 @@
     "npm": "^6.2.0"
   },
   "scripts": {
-    "postinstall": "cd ember-client && npm install && npm run build",
+    "postinstall": "cd ember_client && npm install && npm run build",
     "start": "node ./bin/www"
   },
   "dependencies": {
