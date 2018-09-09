@@ -32,6 +32,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', mainRouter);
 // app.use('/users', usersRouter);
 
+// Ember app build
+app.use('/dashboard', express.static(__dirname + '/ember_client/dist'));
+
 // make NPM packages accessible to HTML
 app.use('/node_modules/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 
